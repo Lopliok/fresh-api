@@ -6,13 +6,19 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $about from "./routes/about.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $api_login from "./routes/api/login.ts";
 import * as $api_random_uuid from "./routes/api/random-uuid.ts";
 import * as $countdown from "./routes/countdown.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
+import * as $html from "./routes/html.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $logout from "./routes/logout.tsx";
 import * as $search from "./routes/search.tsx";
+import * as $secret from "./routes/secret.tsx";
+import * as $todo from "./routes/todo.tsx";
 import * as $Countdown from "./islands/Countdown.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $TodoListView from "./islands/TodoListView.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -21,15 +27,21 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/about.tsx": $about,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/api/login.ts": $api_login,
     "./routes/api/random-uuid.ts": $api_random_uuid,
     "./routes/countdown.tsx": $countdown,
     "./routes/greet/[name].tsx": $greet_name_,
+    "./routes/html.tsx": $html,
     "./routes/index.tsx": $index,
+    "./routes/logout.tsx": $logout,
     "./routes/search.tsx": $search,
+    "./routes/secret.tsx": $secret,
+    "./routes/todo.tsx": $todo,
   },
   islands: {
     "./islands/Countdown.tsx": $Countdown,
     "./islands/Counter.tsx": $Counter,
+    "./islands/TodoListView.tsx": $TodoListView,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
